@@ -75,6 +75,32 @@ a{
 }
 
 header {
+  box-sizing: border-box;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #010115;
+  z-index: 101;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-left: 1rem;
+  padding-right: 2rem;
+}
+
+li {
+  list-style: none;
+}
+
+.nav-links {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  gap: 1rem;
+}
+
+.sub-header {
   background: var(--dark-bg);
   /* grid-column: 2 / span 5; */
   font-size: 1.5rem;
@@ -109,14 +135,14 @@ header {
 
 @media only screen and (min-width: 768px){
   
-  header {
+  .sub-header {
     background: var(--dark-bg);
     /* grid-column: 2 / span 5; */
     font-size: 2.5rem;
     padding: 2rem;
     margin-bottom: var(--spacing);
     width: 50%;
-    margin-top: 1rem;
+    margin-top: 6rem;
   }
 
   section {

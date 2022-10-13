@@ -12,13 +12,23 @@
     </div>
     <canvas id="bg"></canvas>
     <main style="display: none;" id="main">
-
-      <header class="left">
-        <h2>Jean-Baptiste Ragues</h2>
-        <p class="aqua">Développeur Front-End</p>
+      <header>
+        <h3>Jean-Baptiste Ragues</h3>
+        <ul class="nav-links">
+          <li><a href="#landing">Accueil</a></li>
+          <li><a href="#about">À Propos</a></li>
+          <li><a href="#projects">Projets</a></li>
+          <li><a href="#skills">Compétences</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
       </header>
 
-      <section class="right black-bg">
+      <div class="left sub-header" id="landing">
+        <h2>Jean-Baptiste Ragues</h2>
+        <p class="aqua">Développeur Front-End</p>
+      </div>
+
+      <section class="right black-bg" id="about">
         <h2>📜 À propos</h2>
         <p>
           Après m'être réorienté dans mes études, j'ai entamé une 
@@ -35,7 +45,7 @@
         <div class="flex-row-center"><a href="">Télécharger mon CV</a></div>
       </section>
 
-      <section class="full">
+      <section class="full" id="projects">
         <h2>👩🏽‍🚀 Projets</h2>
         <div class="projectsContainer">
 
@@ -123,7 +133,7 @@
 
       </section>
 
-      <section class="left">
+      <section class="left" id="skills">
         <div class="skillsContainer">
           <h2>🚀 Compétences</h2>
 
@@ -232,7 +242,7 @@
 
       </section>
 
-      <section class="right black-bg">
+      <section class="right black-bg" id="contact">
         <h2>Me contacter</h2>
         <form
           action="https://formspree.io/f/moqblnwr"
