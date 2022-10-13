@@ -6,10 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio Jean-Baptiste Ragues</title>
   </head>
-  <body>
-    <!--<div id="app"></div>-->
+  <body onload="showPage()">
+    <div class="loaderWrapper" id="loaderWrapper">
+      <div class="loader"></div>
+    </div>
     <canvas id="bg"></canvas>
-    <main>
+    <main style="display: none;" id="main">
 
       <header class="left">
         <h2>Jean-Baptiste Ragues</h2>
@@ -23,12 +25,12 @@
           <span class="aqua">licence en informatique</span> dans laquelle j'ai pû
           pleinement m'épanouir.<br/><br/> En parallèle de mes études je me suis interessé au developpement web et j'ai
           commencé à coder mes premiers sites web.<br/><br/> À la fin de ma licence j'ai effectué 
-          <span class="aqua">un stage où j'ai contribué à la création d'un site web</span> 
+          <a href="#project4">un stage où j'ai contribué à la création d'un site web</a> 
           qui servait d'interface graphique pour un logiciel d'analyses WCET (Otawa) créé
           par des chercheurs à l'Irit.<br/><br/> Ce projet à confirmé mon goût pour le développement web, et après avoir 
           <span class="aqua">obtenu ma licence d'informatique</span> 
           en 2021, j'ai pris un an en autodidacte pour me former au développement web et 
-          <span class="aqua">créer des projets personnels</span> dont une partie est présentée un peu plus bas.
+          <a href="#project1">créer des projets personnels</a> dont une partie est présentée un peu plus bas.
         </p>
         <div class="flex-row-center"><a href="">Télécharger mon CV</a></div>
       </section>
@@ -152,6 +154,11 @@
                 <img src="./images/icons/tailwindcss.svg" alt="tailwind CSS">
                 <span>Tailwind CSS</span>
               </div>
+
+              <div class="skillLogo">
+                <img src="./images/icons/vite.png" alt="vite">
+                <span>Vite</span>
+              </div>
             </div>
           </div>
 
@@ -255,5 +262,14 @@
 
     </main>
     <script type="module" src="/main.js"></script>
+    <script>
+      function showPage(){
+        setTimeout(disableLoader, 1000);
+      }
+      function disableLoader(){
+        document.getElementById('loaderWrapper').style.display = "none";
+        document.getElementById('main').style.display = "flex";
+      }
+    </script>
   </body>
 </html>
