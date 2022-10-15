@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="./project1.css">
+    </head>
+    <body>
+        <main>
+            <!-- Container for the image gallery -->
+            <div class="container">
+
+                <!-- Full-width images with number text -->
+                <div class="mySlides">
+                    <div class="numbertext">1 / 11</div>
+                    <img src="../../images/my-fit-coach/Accueil_desktop.JPG" style="width:100%">
+                </div>
+            
+                <div class="mySlides">
+                    <div class="numbertext">2 / 11</div>
+                    <img src="../../images/my-fit-coach/Connexion_desktop.JPG" style="width:100%">
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">3 / 11</div>
+                    <img src="../../images/my-fit-coach/Exercice_nouveau_desktop.JPG" style="width:100%">
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">4 / 11</div>
+                    <img src="../../images/my-fit-coach/Exercice_desktop.JPG" style="width:100%">
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">5 / 11</div>
+                    <img src="../../images/my-fit-coach/Exercice_historique_desktop.JPG" style="width:100%">
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">6 / 11</div>
+                    <img src="../../images/my-fit-coach/Session_nouvelle_desktop.JPG" style="width:100%">
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">7 / 11</div>
+                    <img src="../../images/my-fit-coach/Repas_nouveau_desktop.JPG" style="width:100%">
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">8 / 11</div>
+                    <img src="../../images/my-fit-coach/EDT_desktop.JPG" style="width:100%">
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">9 / 11</div>
+                    <img src="../../images/my-fit-coach/EDT_infos-nutri_desktop.JPG" style="width:100%">
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">10 / 11</div>
+                    <img src="../../images/my-fit-coach/EDT_coach_desktop.JPG" style="width:100%">
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">11 / 11</div>
+                    <img src="../../images/my-fit-coach/Poids_desktop.JPG" style="width:100%">
+                </div>
+            
+                <!-- <div class="mySlides">
+                <div class="numbertext">3 / 6</div>
+                    <img src="../../images/my-fit-coach/Exercice_desktop.JPG" style="width:100%">
+                </div>
+            
+                <div class="mySlides">
+                <div class="numbertext">4 / 6</div>
+                    <img src="../../images/my-fit-coach/Repas_nouveau_desktop.JPG" style="width:100%">
+                </div>
+            
+                <div class="mySlides">
+                <div class="numbertext">5 / 6</div>
+                    <img src="../../images/my-fit-coach/EDT_desktop.JPG" style="width:100%">
+                </div>
+            
+                <div class="mySlides">
+                <div class="numbertext">6 / 6</div>
+                    <img src="../../images/my-fit-coach/EDT_coach_desktop.JPG" style="width:100%">
+                </div> -->
+            
+                <!-- Next and previous buttons -->
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            
+                <!-- Image text -->
+                <div class="caption-container">
+                <p id="caption"></p>
+                </div>
+            
+                <!-- Thumbnail images -->
+                <div class="row">
+                <div class="column">
+                    <img 
+                    class="demo cursor" 
+                    src="../../images/my-fit-coach/Accueil_desktop.JPG" 
+                    style="width:100%" 
+                    onclick="currentSlide(1)" 
+                    alt="Page d'accueil quand l'utilisateur n'est pas connecté">
+                </div>
+                <div class="column">
+                    <img 
+                    class="demo cursor" 
+                    src="../../images/my-fit-coach/Connexion_desktop.JPG" 
+                    style="width:100%" 
+                    onclick="currentSlide(2)" 
+                    alt="Page de connexion">
+                </div>
+                <div class="column">
+                    <img 
+                        class="demo cursor" 
+                        src="../../images/my-fit-coach/Exercice_nouveau_desktop.JPG" 
+                        style="width:100%" 
+                        onclick="currentSlide(3)" 
+                        alt="Création d'un nouvel exercice dont les paramètres sont personnalisables"
+                    >
+                </div>
+                <div class="column">
+                    <img 
+                        class="demo cursor" 
+                        src="../../images/my-fit-coach/Exercice_desktop.JPG" 
+                        style="width:100%" 
+                        onclick="currentSlide(4)" 
+                        alt="Page de l'exercice affichant une description de l'exercice, le dernier entrainement, ainsi qu'un bouton pour accéder à l'historique complet"
+                    >
+                </div>
+                <div class="column">
+                    <img 
+                        class="demo cursor" 
+                        src="../../images/my-fit-coach/Exercice_historique_desktop.JPG" 
+                        style="width:100%" 
+                        onclick="currentSlide(5)" 
+                        alt="Historique complet des entrainements pour un exercice en particulier"
+                    >
+                </div>
+                <div class="column">
+                    <img 
+                        class="demo cursor" 
+                        src="../../images/my-fit-coach/Session_nouvelle_desktop.JPG" 
+                        style="width:100%" 
+                        onclick="currentSlide(6)" 
+                        alt="Création d'une nouvelle session qui regroupe un ou plusieurs exercices"
+                    >
+                </div>
+                <div class="column">
+                    <img 
+                        class="demo cursor" 
+                        src="../../images/my-fit-coach/Repas_nouveau_desktop.JPG" 
+                        style="width:100%" 
+                        onclick="currentSlide(7)" 
+                        alt="Création d'un nouveau repas avec calcul des valeurs nutritionnelles de l'ensemble des aliments"
+                    >
+                </div>
+                <div class="column">
+                    <img 
+                        class="demo cursor" 
+                        src="../../images/my-fit-coach/EDT_desktop.JPG" 
+                        style="width:100%" 
+                        onclick="currentSlide(8)" 
+                        alt="Emploi du temps de la semaine contenant les repas et les sessions de sport"
+                    >
+                </div>
+                <div class="column">
+                    <img 
+                        class="demo cursor" 
+                        src="../../images/my-fit-coach/EDT_infos-nutri_desktop.JPG" 
+                        style="width:100%" 
+                        onclick="currentSlide(9)" 
+                        alt="Affichage des valeurs nutritionnelles de l'ensemble des repas sur la journée ou sur la semaine"
+                    >
+                </div>
+                <div class="column">
+                    <img 
+                        class="demo cursor" 
+                        src="../../images/my-fit-coach/EDT_coach_desktop.JPG" 
+                        style="width:100%" 
+                        onclick="currentSlide(10)" 
+                        alt="En plus d'indiquer les valeurs nutritionnelles sur la journée/semaine, l'option coach vous permet de calculer si ces valeurs sont bonnes ou trop basses/hautes"
+                    >
+                </div>
+                <div class="column">
+                    <img 
+                        class="demo cursor" 
+                        src="../../images/my-fit-coach/Poids_desktop.JPG" 
+                        style="width:100%" 
+                        onclick="currentSlide(11)" 
+                        alt="Affichage de la courbe de l'historique des poids du corps enregistrés par l'utilisateur"
+                    >
+                </div>
+                <!-- <div class="column">
+                    <img 
+                    class="demo cursor" 
+                    src="../../images/my-fit-coach/Exercice_desktop.JPG" 
+                    style="width:100%" 
+                    onclick="currentSlide(3)" 
+                    alt="création d'un nouvel exercice dont les paramètres sont personnalisables">
+                </div>
+                <div class="column">
+                    <img 
+                    class="demo cursor" 
+                    src="../../images/my-fit-coach/Repas_nouveau_desktop.JPG" 
+                    style="width:100%" 
+                    onclick="currentSlide(4)" 
+                    alt="Création d'un nouveau repas avec calcul des valeurs nutritionnelles de l'ensemble des aliments">
+                </div>
+                <div class="column">
+                    <img 
+                    class="demo cursor" 
+                    src="../../images/my-fit-coach/EDT_desktop.JPG" 
+                    style="width:100%" 
+                    onclick="currentSlide(5)" 
+                    alt="Emploi du temps de la semaine contenant les repas et les sessions de sport">
+                </div>
+                <div class="column">
+                    <img 
+                        class="demo cursor" 
+                        src="../../images/my-fit-coach/EDT_coach_desktop.JPG" 
+                        style="width:100%" 
+                        onclick="currentSlide(6)" 
+                        alt="Informations nutritionnelles sur les repas programmés pour la semaine"
+                    >
+                </div> -->
+                </div>
+            </div>
+        </main>
+        <script src="./project1.js" async defer></script>
+    </body>
+</html>
