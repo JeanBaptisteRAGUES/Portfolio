@@ -31,6 +31,14 @@
   section {
     margin-top: 40px;
   }
+
+  .mySlides > img {
+    height: 200px;
+  }
+
+  .column > img {
+    height: 50px;
+  }
   
   /* Position the image container (needed to position the left and right arrows) */
   .container {
@@ -140,5 +148,13 @@
   
     section {
       margin-top: 40px;
+    }
+
+    .mySlides > img {
+        height: 550px;
+    }
+    
+    .column > img {
+        height: 120px;
     }
   }
