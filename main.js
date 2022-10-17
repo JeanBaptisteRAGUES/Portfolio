@@ -105,6 +105,20 @@ function onWindowResize(){
 
 window.addEventListener("resize", onWindowResize, false);
 
+const burgerMenu = document.getElementById("burgerMenu");
+const mobileNavLinks = document.getElementById("mobileNavLinks");
+
+function showNavLinks(){
+  mobileNavLinks.style.display = "flex";
+}
+
+function hideNavLinks(){
+  mobileNavLinks.style.display = "none";
+}
+
+burgerMenu.addEventListener('click', showNavLinks);
+mobileNavLinks.addEventListener('click', hideNavLinks);
+
 //Rafraichissement à chaque frame
 function animate() {
   requestAnimationFrame(animate);

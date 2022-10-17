@@ -3,6 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio Jean-Baptiste Ragues</title>
   </head>
@@ -12,9 +14,21 @@
     </div>
     <canvas id="bg"></canvas>
     <main style="display: none;" id="main">
-      <header>
+      <header id="desktopHeader">
         <h3>Jean-Baptiste Ragues</h3>
         <ul class="nav-links">
+          <li><a href="#landing">Accueil</a></li>
+          <li><a href="#about">À Propos</a></li>
+          <li><a href="#projects">Projets</a></li>
+          <li><a href="#skills">Compétences</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </header>
+
+      <header id="mobileHeader" >
+        <h3>JBR</h3>
+        <i class="fa fa-bars" id="burgerMenu"></i>
+        <ul class="nav-links" id="mobileNavLinks">
           <li><a href="#landing">Accueil</a></li>
           <li><a href="#about">À Propos</a></li>
           <li><a href="#projects">Projets</a></li>

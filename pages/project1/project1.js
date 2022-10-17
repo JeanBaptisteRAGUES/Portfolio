@@ -28,3 +28,6 @@ function showSlides(n) {
   dots[slideIndex-1].className += " active";
   captionText.innerHTML = dots[slideIndex-1].alt;
 }
+
+document.getElementById("prev").addEventListener("click", () => plusSlides(-1));
+document.getElementById("next").addEventListener("click", () => plusSlides(1));

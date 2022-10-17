@@ -75,7 +75,21 @@ a{
   align-items: center;
 }
 
-header {
+#desktopHeader {
+  box-sizing: border-box;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #010115;
+  z-index: 101;
+  display: none;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-left: 1rem;
+  padding-right: 2rem;
+}
+
+#mobileHeader {
   box-sizing: border-box;
   position: fixed;
   top: 0;
@@ -85,8 +99,26 @@ header {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  align-items: center;
   padding-left: 1rem;
   padding-right: 2rem;
+  height: 60px;
+}
+
+#mobileNavLinks {
+  box-sizing: border-box;
+  position: absolute;
+  top: 40px;
+  left: 0;
+  width: 100%;
+  height: 40vh;
+  display: none;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  font-weight: bold;
+  font-size: large;
+  background-color: rgba(0, 0, 0, 0.90);
 }
 
 li {
@@ -104,11 +136,11 @@ li {
 .sub-header {
   background: var(--dark-bg);
   /* grid-column: 2 / span 5; */
-  font-size: 1.5rem;
+  font-size: 1rem;
   padding: 1rem;
-  margin-bottom: var(--spacing);
+  margin-bottom: 20rem;
   width: 70%;
-  margin-top: 1rem;
+  margin-top: 5rem;
 }
 
 .right {
@@ -303,6 +335,34 @@ img {
 }
 
 @media only screen and (min-width: 768px){
+
+  #desktopHeader {
+    box-sizing: border-box;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #010115;
+    z-index: 101;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-left: 1rem;
+    padding-right: 2rem;
+  }
+
+  #mobileHeader {
+    box-sizing: border-box;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #010115;
+    z-index: 101;
+    display: none;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-left: 1rem;
+    padding-right: 2rem;
+  }
 
   main {
     color: white;
