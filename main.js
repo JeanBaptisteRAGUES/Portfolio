@@ -1,8 +1,6 @@
 import './style.css';
 import * as THREE from 'three';
 import { BlendFunction, BloomEffect, EffectComposer, EffectPass, KernelSize, RenderPass, TextureEffect } from 'postprocessing';
-import { instantiateTorus } from './objects3D/torus';
-import { instantiateJeff } from './objects3D/jeff';
 import { animateEarth, instantiateEarth } from './objects3D/earth';
 import { animateMoon, instantiateMoon } from './objects3D/moon';
 import { instantiateStars } from './objects3D/stars';

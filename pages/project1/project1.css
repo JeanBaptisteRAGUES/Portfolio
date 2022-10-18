@@ -26,10 +26,19 @@
   article {
     width: 90%;
     margin-top: 100px;
+    border-top: solid white;
   }
 
   section {
     margin-top: 40px;
+    border-bottom: dashed white;
+    padding-bottom: 2rem;
+  }
+
+  a {
+    text-decoration: none;
+    color: aqua;
+    cursor: pointer;
   }
   
   /* Position the image container (needed to position the left and right arrows) */
