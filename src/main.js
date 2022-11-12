@@ -134,6 +134,7 @@ function hideNavLinks(){
 }
 
 burgerMenu.addEventListener('click', showNavLinks);
+crossMenu.addEventListener('click', hideNavLinks);
 mobileNavLinks.addEventListener('click', hideNavLinks);
 
 //Rafraichissement à chaque frame
