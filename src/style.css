@@ -121,6 +121,15 @@ a{
   background-color: rgba(0, 0, 0, 0.90);
 }
 
+#crossMenu {
+  color: #FFF;
+  display: none;
+  font-family: 'Arial Narrow Bold', sans-serif;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+}
+
 li {
   list-style: none;
 }

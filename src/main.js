@@ -118,14 +118,19 @@ function onWindowResize(){
 window.addEventListener("resize", onWindowResize, false);
 
 const burgerMenu = document.getElementById("burgerMenu");
+const crossMenu = document.getElementById("crossMenu");
 const mobileNavLinks = document.getElementById("mobileNavLinks");
 
 function showNavLinks(){
   mobileNavLinks.style.display = "flex";
+  crossMenu.style.display = "flex";
+  burgerMenu.style.display = "none";
 }
 
 function hideNavLinks(){
   mobileNavLinks.style.display = "none";
+  crossMenu.style.display = "none";
+  burgerMenu.style.display = "flex";
 }
 
 burgerMenu.addEventListener('click', showNavLinks);
